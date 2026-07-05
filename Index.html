@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <h1>🏨 Hotel Booking</h1>
+        </nav>
+      <div class="filter-section">
+        
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Hotels..." >
+            
+       <select id="priceFilter">
+        <option value="All">All Prices</option>
+        <option value="3000">Below ₹3000</option>
+        <option value="6000">₹3000 - ₹6000</option>
+        <option value="6001">Above ₹6000</option>
+      </select>
+  <select id="ratingFilter">
+    <option value="All">All Ratings</option>
+    <option value="4">4⭐ & Above</option>
+    <option value="3">3⭐ & Above</option>
+</select>
+<select id="sortFilter">
+    <option value="default">Sort By</option>
+    <option value="lowToHigh">Price: Low to High</option>
+    <option value="highToLow">Price: High to Low</option>
+    <option value="rating">Rating: High to Low</option>
+</select>
+</header>
+
+<div id="locationButtons" class="location-buttons">
+    <!-- JavaScript se buttons aayenge -->
+</div>
+
+<div class="action-buttons">
+    <button id="resetBtn">Reset Filters</button>
+    <a href="wishlist.html">
+        <button>❤️ Wishlist</button>
+    </a>
+</div>
+
+<main>
+    <div id="hotelContainer"></div>
+</main>
+
+<footer>
+    <h3>🏨 Hotel Booking</h3>
+    <p>Find the best hotels at the best prices.</p>
+    <p>© 2026 Hotel Booking. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
